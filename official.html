@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoisle your future way</title>
+     <style>
+    .metallic-text {
+      color: #b8c6db;
+      background: linear-gradient(to right, #b8c6db, #f5f7fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f3f7f6; /* Light background */
+            color: #4d4d4d; /* Light text color */
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: #9ae3d1; /* Soft pastel teal */
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 150px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #7ebda1; /* Lighter hover effect */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?agriculture,eco') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section Styles */
+        .content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff; /* White for sections */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #4d9b8a; /* Light pastel green */
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #666666; /* Lighter text */
+        }
+
+        .content img {
+            width: 200%;
+            border-radius: 30px;
+            margin-top: 260px;
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #f9f9f9; /* Light gray cards */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            color: #4d9b8a; /* Pastel green */
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #777777; /* Light gray text */
+        }
+
+        /* Chat Box */
+        .chat-box {
+            background-color: #f4fdfb; /* Light mint green */
+            border: 2px solid #9ae3d1;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-box textarea,
+        .chat-box button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1.1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .chat-box button {
+            background-color: #9ae3d1; /* Soft pastel teal */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .chat-box button:hover {
+            background-color: #7ebda1; /* Lighter teal hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #264653;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo.png" alt="Ecoisle Logo" height="500" width="150">
+ </img>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section with Light Font Color -->
+<div class="hero" id="home">
+    <div style="color: #f0ff00;">Ecoisle : Sustainable Agriculture for Tomorrow</div>
+</div>
+
+
+    <!-- About Section -->
+    <section class="content" id="about">
+        <h2>About Us</h2>
+        <p>
+            At Ecoisle, we are pioneers in sustainable farming solutions. Our vision is to create a greener tomorrow through innovative products and eco-friendly practices.
+        </p>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section class="content">
+        <h2>Our Partners</h2>
+        <p>
+            Ecoisle collaborates with several renowned agricultural companies, research institutions, and eco-friendly organizations that share our vision of a sustainable future. Through these partnerships, we strive to combine knowledge, resources, and cutting-edge technology to bring you the best solutions in agriculture.
+        </p>
+        
+            <li align="center">GreenFields Agro</li> 
+            <li align="center">Nature's Best Organics</li>
+            <li align="center">EcoFarm Solutions</li>
+            <li align="center">BioGreen Technologies</li>
+            <li align="center">Coconut Bliss Cosmetics</li>
+            <li align="center">Natural Beauty Essentials</li>
+            <li align="center">Pure Essence SkinCare</li>
+       
+        <p>
+            These collaborations maximize the value and sustainability of coconut farming, among other agricultural innovations.
+        </p>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="content" id="shop">
+        <h2>Shop Our Products</h2>
+        <div class="card-container">
+            <div class="card">
+                
+                <h3>Coconut Oil</h3>
+                <p>Pure and organic coconut oil for multipurpose use.</p>
+            </div>
+            <div class="card">
+                
+                <h3>Coconut Candy</h3>
+                <p>Delicious coconut-based candies for your sweet tooth.</p>
+            </div>
+            <div class="card">
+                
+                <h3>Honey</h3>
+                <p>Organic and natural honey harvested with care.</p>
+            </div>
+            <div class="card">
+
+                <h3>Coconut Milk</h3>
+                <p>Fresh and creamy coconut milk for cooking and beverages.</p>
+            </div>
+            <div class="card">
+                
+                <h3>Handicraft</h3>
+                <p>Eco-friendly handmade crafts for a personal touch.</p>
+            </div>
+            <div class="card">
+                
+                <h3>Coconut Cosmetics</h3>
+                <p>Natural coconut-based skincare products.</p>
+            </div>
+            <div class="card">  <h3>Aloe Vera</h3> <p>Fresh aloe vera for natural skincare and health benefits.</p> </div> <div class="card">  <h3>Vegetables</h3> <p>Organic vegetables grown with sustainable practices.</p> </div>
+        </div> <br> <br>
+<div style="text-align: center; margin-top: 50px;">
+  <a href="https://avani-app.netlify.app/" 
+     style="text-decoration: none; color: #ffffff; background-color: #ff5733; padding: 15px 30px; border-radius: 10px; font-size: 20px; font-weight: bold; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); transition: transform 0.2s;" 
+     onmouseover="this.style.transform='scale(1.1)';" 
+     onmouseout="this.style.transform='scale(1)';">
+    👉👉 Start Shopping Now! 👈👈 
+  </a>
+</div>
+
+    </section>
+<!-- Chat Box Section -->
+<section class="content">
+    <h2>💬 Chat with Us</h2>
+    <div class="chat-box">
+        <form action="https://formspree.io/f/xpwwzdyv" method="POST" onsubmit="return validateForm();">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            
+            <label for="email">Your Email (optional):</label>
+            <input type="email" id="email" name="_replyto" placeholder="Your Email Address" />
+
+            <button type="submit">📨 Send Message</button>
+        </form>
+    </div>
+</section>
+
+<style>
+    /* Chat Section Styling */
+    .content h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #4d9b8a;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-box {
+        background-color: #ffffff;
+        border: 2px solid #9ae3d1;
+        padding: 30px;
+        max-width: 600px;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        animation: fadeIn 1s ease-out;
+    }
+
+    .chat-box label {
+        font-size: 1.2em;
+        color: #4d4d4d;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .chat-box textarea,
+    .chat-box input {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1em;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        outline: none;
+        transition: box-shadow 0.3s;
+    }
+
+    .chat-box textarea:focus,
+    .chat-box input:focus {
+        box-shadow: 0 0 8px #9ae3d1;
+    }
+
+    .chat-box button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+        background-color: #4d9b8a;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .chat-box button:hover {
+        background-color: #369774;
+        transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<script>
+    function validateForm() {
+        const message = document.getElementById('message').value.trim();
+        if (!message) {
+            alert('Please write a message before sending.');
+            return false;
+        }
+        return true;
+    }
+</script>
+
+    <!-- Footer -->
+    <footer>
+        &copy;2025 Ecoisle&trade;  | All Rights Reserved
+    </footer>
+</body>
+</html>
